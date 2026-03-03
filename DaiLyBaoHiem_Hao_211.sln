@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36915.13 d17.14
+VisualStudioVersion = 17.14.36915.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
@@ -76,6 +76,33 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalGateway.Implementation", "AgentPortalGateway.Implementation\AgentPortalGateway.Implementation.csproj", "{47816912-4634-4A8D-AACA-D51151C47B86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalGateway.Tests", "AgentPortalGateway.Tests\AgentPortalGateway.Tests.csproj", "{5DB19AB6-57B1-4791-899E-8F4FCE3CA9E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgentPortalApiGateway", "..\AgentPortalApiGateway\AgentPortalApiGateway.csproj", "{39CD194E-CDA8-5AFE-7A0B-709B42EBDF27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWasmClient", "..\BlazorWasmClient\BlazorWasmClient.csproj", "{298D49DC-C9F2-0079-7D4E-605DA5C7E6F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{F659FA94-B6E0-4495-9A63-FB99AD7C74F8}"
+	ProjectSection(SolutionItems) = preProject
+		..\postgres\createdatabases.sql = ..\postgres\createdatabases.sql
+		..\postgres\lab_netmicro_jobs.backup = ..\postgres\lab_netmicro_jobs.backup
+		..\postgres\lab_netmicro_payments.backup = ..\postgres\lab_netmicro_payments.backup
+		..\postgres\lab_netmicro_policy.backup = ..\postgres\lab_netmicro_policy.backup
+		..\postgres\lab_netmicro_pricing.backup = ..\postgres\lab_netmicro_pricing.backup
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{7AEDC5BA-3C26-48BD-8850-B29FD35768C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{E07A5DA4-0261-4A22-863D-94C455D01431}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "eureka-server", "eureka-server", "{610D8662-0F81-4652-822B-0CD99DAD0DF7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DashboardService", "DashboardService", "{8B768375-BC34-45E3-8FB1-0FF4081F292C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Api", "DashboardService.Api\DashboardService.Api.csproj", "{2295E06E-C8A6-4FEF-9558-A3D66C0DB11A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Implementation", "DashboardService.Implementation\DashboardService.Implementation.csproj", "{4577EA52-0EA1-4D1B-9D83-E82E37E5E4F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DashboardService.Tests", "DashboardService.Tests\DashboardService.Tests.csproj", "{D53E2176-90E3-4DA0-8D40-E3B7144030F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,6 +218,26 @@ Global
 		{5DB19AB6-57B1-4791-899E-8F4FCE3CA9E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5DB19AB6-57B1-4791-899E-8F4FCE3CA9E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5DB19AB6-57B1-4791-899E-8F4FCE3CA9E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39CD194E-CDA8-5AFE-7A0B-709B42EBDF27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39CD194E-CDA8-5AFE-7A0B-709B42EBDF27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39CD194E-CDA8-5AFE-7A0B-709B42EBDF27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39CD194E-CDA8-5AFE-7A0B-709B42EBDF27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{298D49DC-C9F2-0079-7D4E-605DA5C7E6F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{298D49DC-C9F2-0079-7D4E-605DA5C7E6F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{298D49DC-C9F2-0079-7D4E-605DA5C7E6F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{298D49DC-C9F2-0079-7D4E-605DA5C7E6F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2295E06E-C8A6-4FEF-9558-A3D66C0DB11A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2295E06E-C8A6-4FEF-9558-A3D66C0DB11A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2295E06E-C8A6-4FEF-9558-A3D66C0DB11A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2295E06E-C8A6-4FEF-9558-A3D66C0DB11A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4577EA52-0EA1-4D1B-9D83-E82E37E5E4F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4577EA52-0EA1-4D1B-9D83-E82E37E5E4F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4577EA52-0EA1-4D1B-9D83-E82E37E5E4F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4577EA52-0EA1-4D1B-9D83-E82E37E5E4F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D53E2176-90E3-4DA0-8D40-E3B7144030F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D53E2176-90E3-4DA0-8D40-E3B7144030F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D53E2176-90E3-4DA0-8D40-E3B7144030F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D53E2176-90E3-4DA0-8D40-E3B7144030F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -232,6 +279,10 @@ Global
 		{023C7BBD-AED1-45DE-8909-8EF3BDCDE667} = {C4CBC5FA-0443-4AF5-9071-84E38FF1C2EF}
 		{47816912-4634-4A8D-AACA-D51151C47B86} = {C4CBC5FA-0443-4AF5-9071-84E38FF1C2EF}
 		{5DB19AB6-57B1-4791-899E-8F4FCE3CA9E6} = {C4CBC5FA-0443-4AF5-9071-84E38FF1C2EF}
+		{8B768375-BC34-45E3-8FB1-0FF4081F292C} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2295E06E-C8A6-4FEF-9558-A3D66C0DB11A} = {8B768375-BC34-45E3-8FB1-0FF4081F292C}
+		{4577EA52-0EA1-4D1B-9D83-E82E37E5E4F6} = {8B768375-BC34-45E3-8FB1-0FF4081F292C}
+		{D53E2176-90E3-4DA0-8D40-E3B7144030F4} = {8B768375-BC34-45E3-8FB1-0FF4081F292C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {654564B8-9C17-42D5-9C95-8EB90904F6F2}
