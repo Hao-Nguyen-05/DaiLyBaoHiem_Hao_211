@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
-
+using Steeltoe.Discovery.Client;
 namespace AuthService;
 
 public class Startup
@@ -85,5 +85,6 @@ public class Startup
 
         app.UseHttpsRedirection();
         app.UseEndpoints(endpoints => endpoints.MapControllers());
+        app.UseDiscoveryClient();
     }
 }
